@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Edureka';
+
+  optionLoaded = 'recipes';
+  recipes: string;
+  onNavigation(option: string) {
+       this.optionLoaded = option;
+  }
 }
